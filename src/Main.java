@@ -29,7 +29,7 @@ public class Main {
     }
 
     private static int calculate(double length, double width, double height) {
-        int amountInMeters = ((int) Math.ceil((length + width) * 2 * height));
+        int amountInMeters = (int) Math.ceil((length + width) * 2 * height);
         int amountInRolls = (int) Math.ceil(amountInMeters / Constants.wallpaperRollLengthInMeters);
         return amountInRolls;
     }
